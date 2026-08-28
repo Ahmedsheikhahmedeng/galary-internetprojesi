@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Galerisi</title>
+
+    <!-- Google Fonts bağlantıları -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Kullanılan fontlar: Cormorant Garamond + Manrope -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS dosyası -->
+    <link href="style.css" rel="stylesheet">
+    <script src="theme.js"></script>
+</head>
+
+<body class="tema-acik">
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="menu-buton hover-hedef" id="menu-open">MENU</div>
+
+        <div class="tema-buton-alani">
+            <div class="menu-buton hover-hedef" id="theme-toggle">GECE MODU</div>
+        </div>
+        
+        <a href="contact.html" class="yazi-kucuk yazi-soluk hover-hedef vurgu-yazi iletisim-link">
+             İletişime Geç
+        </a>
+
+    </nav>
+
+    <!-- AÇILIR TAM EKRAN MENÜ -->
+    <div class="menu-kaplama" id="menu-overlay">
+        <div class="menu-kapat hover-hedef" id="menu-close">KAPAT</div>
+
+        <div class="menu-icerik">
+            <div class="menu-ogeleri">
+
+                <a href="index.html" class="menu-link">
+                    <span class="menu-numara">01</span>
+                    <span class="menu-yazi">Home</span>
+                </a>
+
+                <a href="#hz-trigger" class="menu-link">
+                    <span class="menu-numara">02</span>
+                    <span class="menu-yazi">Galeri</span>
+                </a>
+
+                <a href="#yazilar" class="menu-link">
+                    <span class="menu-numara">03</span>
+                    <span class="menu-yazi">Yazılar</span>
+                </a>
+
+                <a href="contact.html" class="menu-link">
+                    <span class="menu-numara">04</span>
+                    <span class="menu-yazi">İletişim</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ANA İÇERİK -->
+    <main>
+
+        <!-- 1. SAYFA: HOME / HERO -->
+        <section class="bolum ana-sayfa yatay-bosluk">
+            <div class="ana-sayfa-yazi sade-belirme">
+                <div class="yazi-kucuk yazi-soluk alt-bosluk-4 ust-yazi-araligi">
+                    Her fotoğraf sessiz bir hikayedir.
+                </div>
+
+                <h1 class="ana-baslik">Fotoğrafçılık
+                </h1>
+
+                <h1 class="ana-baslik ana-baslik-ikinci">
+                    <span class="italik">of</span>Art
+                </h1>
+            </div>
+
+            <div class="ana-sayfa-gorsel sade-belirme">
+                <img 
+                    src="https://images.unsplash.com/photo-1561139726-d0821060523f?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=1600"
+                    alt="Black mirrorless camera"
+                    width="1600"
+                    height="900"
+                    fetchpriority="high">
+            </div>
+        </section>
+
+        <!-- 2. SAYFA: TEXT -->
+        <section class="bolum yazi-sayfasi yatay-bosluk" id="yazilar">
+            
+            <h2 class="yazi-satiri sade-belirme">
+                Fotoğraf <span>anı</span> deyakalamak <del>değil</del>, bazen duyguyu doğru zamanda <span>görmektir</span>.
+            </h2>
+
+            <p class="kucuk-yazi sade-belirme">
+                Işık, duygu ve kadraj birleştiğinde sıradan bir an <strong>ÖZEL</strong> bir hikayeye dönüşür.
+            </p>
+
+            <p class="yazi-satiri soluk-satir sade-belirme">
+                Her çekim, geçmişte kalan bir anı bugüne taşıyan <span>sessiz</span> bir iz bırakır.
+            </p>
+        </section>
+
+        <!-- 3. SAYFA: TAM EKRAN FOTOĞRAF -->
+        <section class="bolum tam-foto-bolumu">
+
+            <img
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=80&w=2500"
+                alt="Snow mountain under stars"
+                class="tam-foto-img"
+            >
+
+            <div class="tam-foto-yazi">
+                <div class="yazi-kucuk alt-bosluk-4">
+                    Zirvesi Kadrajın 
+                </div>
+
+                <h2 class="buyuk-yazi italik">
+                    Anı Hisset.
+                </h2>
+            </div>
+
+        </section>
+
+        <!-- 4. SAYFA: YATAY KAYAN BÖLÜM -->
+        <section class="yatay-bolum" id="hz-trigger">
+
+            <div class="yatay-serit">
+
+                <!-- PANEL 1 -->
+                <div class="yatay-panel">
+                    <div class="yatay-yazi">
+                        <div class="yazi-kucuk vurgu-yazi alt-bosluk-6">
+                            Kadraj 01 
+                        </div>
+
+                        <h2 class="baslik-2 alt-bosluk-6">
+                            <span class="italik serif-font">Paris Işığı.</span>
+                        </h2>
+
+                        <p class="govde-yazi">
+                            Eyfel Kulesi, Paris’in ışıkları arasında yükselen en özel yapılardan biridir.
+                            Şehrin zarafetini, romantik atmosferini ve unutulmaz manzarasını tek bir karede hissettirir.
+                        </p>
+                    </div>
+
+                    <div class="yatay-gorsel">
+                        <img
+                            src="https://images.unsplash.com/photo-1435164205788-305635a36ec2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Eiffel Tower Paris grayscale photography"
+                        >
+                    </div>
+                </div>
+
+                <!-- PANEL 2 -->
+                <div class="yatay-panel">
+                    <div class="yatay-yazi">
+                        <div class="yazi-kucuk vurgu-yazi alt-bosluk-6">
+                            Kadraj 02
+                        </div>
+
+                        <h2 class="baslik-2 alt-bosluk-6">
+                            <span class="italik serif-font">Tarihin Kadrajı.</span>
+                        </h2>
+
+                        <p class="govde-yazi">
+                            Colosseum, Roma’nın geçmişten bugüne uzanan en güçlü simgelerinden biridir.
+                            Taş duvarları, kemerli yapısı ve etkileyici atmosferiyle her açıdan farklı
+                            bir hikaye anlatır. Işık tarihi yapının üzerine düştüğünde, sıradan bir kare
+                            geçmişin izlerini taşıyan unutulmaz bir fotoğrafa dönüşür.
+                        </p>
+                    </div>
+
+                    <div class="yatay-gorsel">
+                        <img
+                            src="https://plus.unsplash.com/premium_photo-1661963265512-73e8d1053b9a?q=80&w=1710&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Dark Ocean Waves"
+                        >
+                    </div>
+                </div>
+
+                <!-- PANEL 3 -->
+                <div class="yatay-panel">
+                    <div class="yatay-yazi">
+                        <div class="yazi-kucuk vurgu-yazi alt-bosluk-6">
+                            Kadraj 03
+                        </div>
+
+                        <h2 class="baslik-2 alt-bosluk-6">
+                            <span class="italik serif-font">Çölün Sırrı.</span>
+                        </h2>
+
+                        <p class="govde-yazi">
+                            Giza Piramitleri, çölün sessizliği içinde yükselen en etkileyici tarihi yapılardan biridir.
+                            Kumların, gökyüzünün ve dev taş blokların birleşimi fotoğrafa güçlü bir atmosfer katar.
+                            Gün batımı ışığı piramitlerin üzerine düştüğünde, her kare geçmişin gizemini ve zamanın
+                            derin izlerini taşıyan unutulmaz bir görüntüye dönüşür.
+                        </p>
+                    </div>
+
+                    <div class="yatay-gorsel">
+                        <img
+                            src="https://images.unsplash.com/photo-1628503218283-6ddeac69dfea?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Mountain Peak"
+                        >
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 5. SAYFA: FOTOĞRAF DETAYLARI -->
+        <section class="bolum detay-fotograf-bolumu yatay-bosluk dikey-bosluk">
+
+            <div class="detay-yazi-alani">
+                <div class="yazi-kucuk vurgu-yazi alt-bosluk-4">
+                    Küçük Detayların Işığı
+                </div>
+
+                <h2 class="detay-buyuk-yazi">
+                    Fotoğraf güzelliği detaylarda saklar. Duvardaki ışık, kısa bir bakış, doğal bir dokunun sıcaklığı kareye sessiz anlam ve özel bir his bırakır.
+                </h2>
+            </div>
+
+            <div class="besli-fotograf-grid">
+
+                <div class="foto-kutu foto-buyuk">
+                    <img src="https://images.unsplash.com/photo-1554334836-2547fa719431?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Doğa fotoğrafı">
+                </div>
+
+                <div class="foto-kutu foto-orta">
+                    <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Kamera fotoğrafı">
+                </div>
+
+                <div class="foto-kutu foto-dikey">
+                    <img src="https://plus.unsplash.com/premium_photo-1661927749760-ad16dabe06e1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Kamera ekipmanı">
+                </div>
+
+                <div class="foto-kutu foto-kare">
+                    <img src="https://plus.unsplash.com/premium_photo-1661963145672-a2bd28eba0fb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Manzara fotoğrafı">
+                </div>
+
+                <div class="foto-kutu foto-genis">
+                    <img src="https://images.unsplash.com/flagged/photo-1559717201-fbb671ff56b7?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Göl manzarası">
+                </div>
+                <div class="foto-kutu foto-kare">
+                    <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fotoğraf">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- 6. SAYFA: FINAL -->
+        <section class="bolum yatay-bosluk final-bolumu">
+
+            <div class="yazi-orta tam-genislik final-yazi-alani">
+                <h2 class="baslik-2 alt-bosluk-4">
+                    Doğru anı arama.
+                </h2>
+
+                <h1 class="buyuk-yazi vurgu-yazi italik">
+                    Hisset.
+                </h1>
+            </div>
+
+            <footer class="tam-genislik site-footer">
+                <div class="yazi-kucuk yazi-soluk">
+                    © 2026 Editorial Framework
+                </div>
+
+                <a href="contact.html" class="yazi-kucuk hover-hedef vurgu-yazi iletisim-link">
+                    İletişime Geç
+                </a>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript dosyaları -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+
+</html>

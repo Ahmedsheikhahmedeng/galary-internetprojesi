@@ -1,0 +1,244 @@
+:root {
+    --bg-light: #F2EFE9;
+    --text-dark: #1C1A17;
+    --bg-dark: #151412;
+    --text-light: #F2EFE9;
+
+    --accent: #B75C40;
+    --text-muted: #857F75;
+    --text-muted-dark: #A09A90;
+
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Manrope', sans-serif;
+
+    --pad-x: 5vw;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+html.tema-acik, body.tema-acik {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+html.tema-koyu, body.tema-koyu {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.contact-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.left-col {
+    width: 45%;
+    min-height: 100vh;
+    background-image: url("https://plus.unsplash.com/premium_photo-1723741320347-bf8a65518f8e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.8s ease;
+}
+
+body.tema-koyu .left-col {
+    filter: brightness(0.85) contrast(1.05);
+}
+
+.right-col {
+    width: 55%;
+    min-height: 100vh;
+    padding: 8vh var(--pad-x);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: inherit;
+    color: inherit;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.top-actions {
+    position: absolute;
+    top: 4vh;
+    right: var(--pad-x);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--accent);
+    transition: opacity 0.3s ease;
+}
+
+#theme-toggle:hover {
+    opacity: 0.8;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.small-title {
+    color: var(--accent);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-size: clamp(4rem, 9vw, 9rem);
+    line-height: 0.9;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: inherit;
+}
+
+h1 span {
+    color: var(--accent);
+    font-style: italic;
+}
+
+p {
+    max-width: 520px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    transition: color 0.8s ease;
+}
+
+body.tema-koyu p {
+    color: var(--text-muted-dark);
+}
+
+form {
+    width: 100%;
+    max-width: 520px;
+}
+
+label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    transition: color 0.8s ease;
+}
+
+body.tema-koyu label {
+    color: var(--text-muted-dark);
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(28, 26, 23, 0.25);
+    background: transparent;
+    padding: 0.8rem 0;
+    margin-bottom: 1.4rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    outline: none;
+    color: inherit;
+    transition: border-color 0.3s ease, color 0.8s ease;
+}
+
+body.tema-koyu input,
+body.tema-koyu textarea {
+    border-bottom: 1px solid rgba(242, 239, 233, 0.25);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(28, 26, 23, 0.4);
+}
+
+body.tema-koyu input::placeholder,
+body.tema-koyu textarea::placeholder {
+    color: rgba(242, 239, 233, 0.4);
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-color: var(--accent) !important;
+}
+
+button {
+    background: var(--text-dark);
+    color: var(--bg-light);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.tema-koyu button {
+    background: var(--text-light);
+    color: var(--bg-dark);
+}
+
+button:hover {
+    background: var(--accent) !important;
+    color: #fff !important;
+}
+
+#error,
+#success-msg {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .left-col {
+        width: 100%;
+        min-height: 40vh;
+    }
+
+    .right-col {
+        width: 100%;
+        min-height: auto;
+        padding: 6vh var(--pad-x);
+    }
+}
